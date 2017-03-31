@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //开启查询名称的服务,开启
+        //开启查询名称的服务,开启什么
         Intent service = new Intent(this,StudentService.class);
         bindService(service,new StudentConnection(),BIND_AUTO_CREATE);
         //延迟2s在显示查询的内容，不然开启服务也是需要时间的，如果不延迟一段时间的话,student对象为null;
